@@ -1,0 +1,21 @@
+public static class Kata
+{
+  public static int Solution(int value)
+  {
+    if(value >= 0 ){
+      int three = 0; // empty val to hold sum of all multiples of three
+      int five = 0; // empty val to hold sum of all multiples of five
+      for(int i = 0; i < value; i++){
+        if(i % 3 == 0){ //checks if a multiple of 3
+          three += i; //checks if a multiple of 3
+        }
+       else if(i % 5 == 0){ //checks if a multiple of 5
+          five += i; //checks if a multiple of 3
+        }
+      }
+      return three + five; //return the sum of all 3 and 5 multiples
+    }else{
+      return 0;
+    }
+  }
+}
