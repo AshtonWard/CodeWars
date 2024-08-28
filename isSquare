@@ -1,0 +1,13 @@
+using System;
+
+public class Kata
+{
+  public static bool IsSquare(int n)
+  {
+    double root = Math.Sqrt(n);
+    bool square = root % 1 == 0; 
+    return square;
+  // return Math.Sqrt(n) % 1 == 0;
+  }
+}
+
